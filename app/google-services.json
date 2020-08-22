@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "570733246426",
+    "firebase_url": "https://ecampus-d81f4.firebaseio.com",
+    "project_id": "ecampus-d81f4",
+    "storage_bucket": "ecampus-d81f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570733246426:android:b5bb4dea2fbf9ebf",
+        "android_client_info": {
+          "package_name": "com.example.samarth.ecampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570733246426-8t6et0u8d7qrd3onhl481qmbgj9iu052.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samarth.ecampus",
+            "certificate_hash": "4feae63644c77b396ba803a17cbf011d56963f53"
+          }
+        },
+        {
+          "client_id": "570733246426-8ade8dku03vg6l8drem6tlk4omghp18t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0CmnDSKCxw1jqnp1rpNecb6OhMyiuN20"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570733246426-8ade8dku03vg6l8drem6tlk4omghp18t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

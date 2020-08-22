@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.samarth.ecampus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.samarth.ecampus.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.example.samarth.ecampus.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name="com.example.samarth.ecampus.LoginActivity" />
+        <activity android:name="com.example.samarth.ecampus.StudentRegistration" />
+        <activity android:name="com.example.samarth.ecampus.HomePage" />
+        <activity android:name="com.example.samarth.ecampus.AdminAttendancePage" />
+        <activity android:name="com.example.samarth.ecampus.TeacherRegistration" />
+        <activity android:name="com.example.samarth.ecampus.SelectRollNo" />
+        <activity android:name="com.example.samarth.ecampus.StudentInformationActivity" />
+        <activity android:name="com.example.samarth.ecampus.SubjectList" />
+        <activity android:name="com.example.samarth.ecampus.AttendanceActivity" />
+        <activity android:name="com.example.samarth.ecampus.AboutUs" />
+        <activity android:name="com.example.samarth.ecampus.NoticeMain" />
+        <activity android:name="com.example.samarth.ecampus.ShowNotice" />
+        <activity android:name="com.example.samarth.ecampus.NotesMain" />
+        <activity android:name="com.example.samarth.ecampus.ShowNotes" />
+        <activity android:name="com.example.samarth.ecampus.EventsMain" />
+        <activity android:name="com.example.samarth.ecampus.ShowEvents" />
+        <activity android:name="com.example.samarth.ecampus.TeacherAttendancePage"/>
+        <activity android:name="com.example.samarth.ecampus.ChatActivity" >
+
+        </activity>
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesMain">
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="86dp"
+        android:layout_toEndOf="@+id/button_choose_image"
+        android:layout_toRightOf="@+id/button_choose_image"
+        android:hint="Enter file name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/notification"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="0dp"
+        android:text="NOTES"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/selectFile"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="SELECT FILE" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="No file is selected"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/fetchFiles"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="UPLOAD" />
+
+    <Button
+        android:id="@+id/fetchFiles"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/notification"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="FETCH FILES" />
+
+</RelativeLayout>

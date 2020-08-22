@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAttendancePage">
+
+    <Button
+        android:id="@+id/btnTeachAttendance"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/btnTeachAddStd"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="Enter Attendance"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnTeachAddStd"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="Add New Student"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/btnTeachViewDetails"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnTeachAddStd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="VIEW STUDENT DETAILS"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAttendancePage">
+
+    <Button
+        android:id="@+id/btnAdminAttendance"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="Enter Attendance"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnAdminAddStd"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnAdminAttendance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="Add New Student"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnAdminAddTeach"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnAdminAddStd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="ADD NEW TEACHER"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnAdminViewDetails"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnAdminAddTeach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:onClick="fn"
+        android:text="VIEW STUDENT DETAILS"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

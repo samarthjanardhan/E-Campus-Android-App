@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectRollNo">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="Student Search"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinRollDiv"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/spinRollYear"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-102dp"
+        android:layout_toEndOf="@+id/txtDiv"
+        android:layout_toRightOf="@+id/txtDiv" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="111dp"
+        android:text="Select Year: "
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtYear"
+        android:layout_alignStart="@+id/txtYear"
+        android:layout_alignLeft="@+id/txtYear"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="75dp"
+        android:text="Select Division: "
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinRollYear"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtYear"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/txtYear"
+        android:layout_toRightOf="@+id/txtYear" />
+
+    <TextView
+        android:id="@+id/txtRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDiv"
+        android:layout_alignStart="@+id/txtDiv"
+        android:layout_alignLeft="@+id/txtDiv"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="64dp"
+        android:text="Enter Roll No: "
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtRollNoSearch"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtRoll"
+        android:layout_alignEnd="@+id/spinRollYear"
+        android:layout_alignRight="@+id/spinRollYear"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_toEndOf="@+id/txtRoll"
+        android:layout_toRightOf="@+id/txtRoll"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="385dp"
+        android:background="@color/colorPrimary"
+        android:text="GET INFORMATION"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp" />
+
+
+</RelativeLayout>

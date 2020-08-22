@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectList">
+
+
+    <Spinner
+        android:id="@+id/spinSubjectListDiv"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/spinSubjectListYear"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-60dp"
+        android:layout_toEndOf="@+id/txtSubjectListDiv"
+        android:layout_toRightOf="@+id/txtSubjectListDiv" />
+
+    <TextView
+        android:id="@+id/txtSubjectListYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Year: "
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtSubjectListDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSubjectListYear"
+        android:layout_alignStart="@+id/txtSubjectListYear"
+        android:layout_alignLeft="@+id/txtYear"
+        android:layout_marginTop="30dp"
+        android:text="Select Division: "
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinSubjectListYear"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtSubjectListYear"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/txtSubjectListYear"
+        android:layout_toRightOf="@+id/txtSubjectListYear" />
+
+    <ListView
+        android:id="@+id/SubjectListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/SubjectListHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:text="Select a Subject" />
+
+</RelativeLayout>
